@@ -223,7 +223,7 @@
                 <div class="fotter-content-first">
                     <a class="footer-logo" href="./index.html">Web<span class="footer-logo-secondary">Studio</span></a>
                 <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
-                </div>
+                </div class="footer-content-secondary">
             
                 <div class="fotter-content-secondary">
                     <p class="footer-text-secondary">Social media</p>
@@ -261,7 +261,7 @@
             <div >
                 <form class="fotter-content-third">
                     <label>
-                        <p class="third-fotter-text">Subscribe</p>
+                        <span class="third-fotter-text">Subscribe</span>
                         <input class="mail-place-fotter" type="email" name="email-fotter" placeholder="E-mail">
                     </label>
                     <button class="fotter-btn" type="submit">Subscribe<svg class="button-plane"><use href="./images/sprite-new.svg#icon-Paper-plane"></use></svg></button>
@@ -271,7 +271,59 @@
         </div>
         
     </footer>
+    <div  class="backdrop is-hidden" data-modal >
+        <div class="modal">
+            <button class="modal-btn" type="button" data-modal-close>
+                <svg class="cross-svg-btn">
+                    <use class="modal-btn-cross" href="./images/sprite-new.svg#icon-cross"></use>
+                </svg>
+            </button>
+            <b class="modal-text">Leave your contacts and we will call you back</b>
+            
+            <form class="form-regestration">
+                        <label class="data-area"  >
+                        <span class="data-name">Name</span>
+                        <input class="writting-area" type="text" name="username" placeholder=" ">
+                        <svg class="form-icon">
+                            <use  href="./images/sprite-new.svg#icon-person" ></use>
+                        </svg>
+                    </label>
+                    <label class="data-area">
+                        <span class="data-name">Phone</span>
+                        <input class="writting-area" type="tel" name="tel" placeholder=" ">
+                        <svg class="form-icon">
+                            <use  href="./images/sprite-new.svg#icon-phone" ></use>
+                        </svg>
+                    </label>
+                
+                        <label class="data-area">
+                        <span class="data-name">Email</span>
+                        <input class="writting-area" type="email" name="imail" placeholder=" ">
+                        <svg class="form-icon">
+                            <use  href="./images/sprite-new.svg#icon-email"></use>
+                        </svg>
+                    </label>          
+                
+                
+                <label class="textarea">
+                    <span class="text-area-name">Comment</span>
+                    <textarea class="textarea-place" name="teaxinput"  rows="6" placeholder="Text input"></textarea>
+                </label>
 
+                <label class="checkbox">
+                    <input class="check-box-box" type="checkbox" name="accept">
+                    <span class="check-box-place"></span>
+                    <span class="check-box-text">I accept the terms and conditions of the <a class="privacy-policy" href="">Privacy Policy</a></span>
+                    
+
+                </label>
+                <button class="modal-send-button" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+</main>
+<script src="./js/modal.js"></script>
 
 </body>
 </html>
